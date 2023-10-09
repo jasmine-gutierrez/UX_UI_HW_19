@@ -5,6 +5,7 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
   <body>
     <header>
@@ -22,7 +23,10 @@
         <h2>Welcome</h2> 
         <h1>I'm Jasmine Gutierrez</h1>
         <p>I'm a passionate UX/UI designer dedicated to promoting diversity and inclusion in tech. With experience mentoring Latina high school students and leading research in STEM support, I've seen the impact of user-centric design firsthand. My mission is to create inclusive digital experiences that reflect diverse perspectives. I'm committed to accessible, user-friendly, and aesthetically pleasing interfaces. Let's collaborate to make positive changes through design.</p>
-        <button>View Resume</button>
+        <div class="button-container">
+          <button id="btn" class="button">View Work</button>
+          <button class="button">View Resume</button>
+        </div>
       </div>
     </section>
     <h1 class="heading">My UX Skills</h1>
@@ -45,7 +49,7 @@
     </section>
 
     <section class="myWork">
-      <h1 class="heading">My Work</h1>
+      <h1 class="myWork">My Work</h1>
       <div class="workGrid">
         <div class="project1">
             <img class="myWork" src="images/NABA PROJECT 1.png">
@@ -83,5 +87,12 @@
         <li>CONTACT</li>
       </ul>
     </footer>
+
+    <div class="preloader">
+      <img src="images/gif.gif">
+    </div>
+
+    <script src="js/index.js"></script>
+
   </body>
 </html>

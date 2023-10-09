@@ -3,7 +3,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   header {
-    background-color: #373738;
+    background-color: #574144;
     padding: 15px;
   }
   header ul {
@@ -16,27 +16,36 @@ body {
   }
   header p {
     display: inline-block;
+    color: #EBEBEB;
   }
   .heroImg {
     background-color: #EBEBEB;
     padding: 100px 15px;
   }
   .content {
-    max-width: 300px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 50px;
-    background-color: #FFFFFF;
+    background-color:#BFA5A8;
     text-align: center;
   }
   button {
     padding: 15px;
-    background-color: #373738;
-    color: white;
+    background-color: #CDC7AA;
+    color: #121212;
     font-size: 15px;
     border-radius: 4px;
   }
+  .button-container{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8px;
+  }
+  .button{
+    flex: 1;
+  }
   footer {
-    background-color: #373738;
+    background-color: #574144;
     padding: 5px;
     color: white;
   }
@@ -67,6 +76,10 @@ body {
   }
   
   /* My Work Section */
+  h1.myWork{
+    text-align: center;
+    padding: 30px;
+  }
   .myWork {
     padding: 60px 30px;
     padding-top: 0;
@@ -110,4 +123,19 @@ body {
   .content3 {
     grid-area: content3;
   }
-  
+   /* Preloader */
+  .preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: #FCFEFC;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.preloader img {
+  transition: all;
+  width: 280px;
+  margin: 0 auto;
+}
